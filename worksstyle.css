@@ -31,22 +31,89 @@ header nav ul li a{
     color: #1717AD;
     text-decoration: none;
 }
-.works {
-    height:100vh;
-}
 .works h2 {
     position: relative;
     color: #1717AD;
     font-size: 5.2rem;
     font-weight: normal;
     left: 15.6%;
-    top: 21.2%;
+    top: 20.5rem;
 }
 .poster h3{
     position: relative;
     color: #1717AD;
-    font-size: 5.2rem;
+    font-size: 2.4rem;
     font-weight: normal;
-    left: 15.6%;
-    top: 21.2%;
+    left: 25%;
+    top: 25.5rem;
+}
+.poster .acd-check{
+    display: none;
+}
+.poster .acd-label{
+    position: relative;
+    font-size: 2.4rem;
+    left: 27%;
+    top: 25rem;
+    color: #1717AD;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.poster .acd-content{
+    position: relative;
+    font-size: 2.4rem;
+    left: 27%;
+    top: 27rem;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
+}
+.poster .acd-check:checked +.poster .acd-label +.poster .acd-content{
+    position: relative;
+    display: flex;
+    font-size: 2.4rem;
+    left: 27%;
+    top: 27rem;
+    height: 500px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
+
+.acd-check{
+    display: none;
+}
+.acd-label{
+    position: relative;
+    font-size: 2.4rem;
+    left: 24.5%;
+    top: 27rem;
+    color: #1717AD;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.acd-content{
+    position: relative;
+    font-size: 2.4rem;
+    left: 24.5%;
+    top: 27rem;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content{
+    position: relative;
+    font-size: 2.4rem;
+    left: 24.5%;
+    top: 27rem;
+    height: 400px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
 }
