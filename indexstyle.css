@@ -1,4 +1,47 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden
+}
 body {
     background-image: url(Web_bg4.png);
     font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+    font-weight: normal;
+}
+.hidden_box input {
+    display: none;
+}
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+.hidden_box{
+    color: #1717AD;
+    font-size: 5.2rem;
+    position: absolute;
+    left: 45.6%;
+    top: 46.7%;
+}
+.hidden_show nav ul{
+    display: flex;
+}
+.hidden_show nav ul li{
+    font-size: 2.4rem;
+    list-style: none;
+    padding: 2.2rem 1.5rem;
+}
+.hidden_show nav ul li a{
+    color: #1717AD;
+    text-decoration: none;
 }
