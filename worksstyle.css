@@ -113,7 +113,7 @@ header nav ul li a{
     top: 27rem;
     height: 0;
     opacity: 0;
-    padding: 0 10px;
+    padding: 10px 10px;
     transition: .5s;
     visibility: hidden;
 }
@@ -127,9 +127,20 @@ header nav ul li a{
     padding: 10px;
     visibility: visible;
 }
+.animation .acd-check:checked + .acd-label + .acd-content{
+    position: relative;
+    font-size: 2.4rem;
+    left: 24.5%;
+    top: 27rem;
+    height: 400px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
 .animation .acd-content .animation1{
     position: relative;
-    left: 25%;
+    left: 10%;
+    top: 5rem;
 }
 .sketch .acd-content .sketch1{
     position: relative;
