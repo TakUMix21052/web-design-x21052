@@ -61,10 +61,6 @@ header nav ul li a{
     padding: 10px;
 }
 .poster .acd-content{
-    position: relative;
-    font-size: 2.4rem;
-    left: 27%;
-    top: 27rem;
     height: 0;
     opacity: 0;
     padding: 0 10px;
@@ -72,15 +68,17 @@ header nav ul li a{
     visibility: hidden;
 }
 .poster .acd-check:checked +.poster .acd-label +.poster .acd-content{
-    position: relative;
-    display: flex;
-    font-size: 2.4rem;
-    left: 27%;
-    top: 27rem;
-    height: 500px;
+    height: 550px;
     opacity: 1;
     padding: 10px;
     visibility: visible;
+}
+.poster .acd-content{
+    display: flex;
+    position: relative;
+    font-size: 2.4rem;
+    left: 30%;
+    top: 25rem;
 }
 
 .acd-check{
@@ -92,15 +90,10 @@ header nav ul li a{
     left: 24.5%;
     top: 27rem;
     color: #1717AD;
-    display: block;
     margin-bottom: 1px;
     padding: 10px;
 }
 .acd-content{
-    position: relative;
-    font-size: 2.4rem;
-    left: 24.5%;
-    top: 27rem;
     height: 0;
     opacity: 0;
     padding: 0 10px;
